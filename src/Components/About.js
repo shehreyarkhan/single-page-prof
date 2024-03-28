@@ -1,5 +1,5 @@
 import React from "react";
-
+import myPDF from './resume/sherry-CV.pdf';
 const About = ({ data }) => {
   if (data) {
     var name = data.name;
@@ -47,7 +47,7 @@ const About = ({ data }) => {
             </div>
             <div className="columns download">
               <p>
-                <a href={resumeDownload} className="button">
+                <a href='#' onClick={()=> {window.open(myPDF)}} className="button">
                   <i className="fa fa-download"></i>Download Resume
                 </a>
               </p>
